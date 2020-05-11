@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36698EFE246752B800B04D2A /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36698EFD246752B800B04D2A /* EmptyStateView.swift */; };
+		36698F0324675E5000B04D2A /* TimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36698F0224675E5000B04D2A /* TimetableViewController.swift */; };
+		369030432465A05F00BBD29D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369030422465A05F00BBD29D /* AppDelegate.swift */; };
+		369030472465A06000BBD29D /* StationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369030462465A06000BBD29D /* StationsViewController.swift */; };
+		3690304A2465A06000BBD29D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369030482465A06000BBD29D /* Main.storyboard */; };
+		3690304C2465A06100BBD29D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3690304B2465A06100BBD29D /* Assets.xcassets */; };
+		3690304F2465A06100BBD29D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3690304D2465A06100BBD29D /* LaunchScreen.storyboard */; };
+		369030582465A09D00BBD29D /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369030572465A09D00BBD29D /* WebService.swift */; };
+		369380942469CC8E0072DE5B /* UIViewController+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369380932469CC8E0072DE5B /* UIViewController+Instantiate.swift */; };
+		36A767592468112F00B65AB2 /* Station+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A767582468112F00B65AB2 /* Station+List.swift */; };
+		36A7675B2468116500B65AB2 /* StationTrainData+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7675A2468116500B65AB2 /* StationTrainData+List.swift */; };
+		36A7675D246811B700B65AB2 /* TrainStopData+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7675C246811B700B65AB2 /* TrainStopData+List.swift */; };
+		36A767612468600700B65AB2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A767602468600700B65AB2 /* AppCoordinator.swift */; };
+		36A767642468673600B65AB2 /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A767632468673600B65AB2 /* TrainViewController.swift */; };
+		36A7676824694C2300B65AB2 /* TimetableModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7676724694C2300B65AB2 /* TimetableModule.swift */; };
+		36A7676A24694C8A00B65AB2 /* TimetablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7676924694C8A00B65AB2 /* TimetablePresenter.swift */; };
+		36A7676C24694D7700B65AB2 /* TimetableInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7676B24694D7700B65AB2 /* TimetableInteractor.swift */; };
+		36A7677124695B6800B65AB2 /* TimetableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7677024695B6800B65AB2 /* TimetableTableViewCell.swift */; };
+		36A76774246961C800B65AB2 /* TrainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A76773246961C800B65AB2 /* TrainViewModel.swift */; };
+		36A7677724699E4800B65AB2 /* StationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7677624699E4800B65AB2 /* StationsRequest.swift */; };
+		36A7677924699EF700B65AB2 /* StationDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7677824699EF700B65AB2 /* StationDataRequest.swift */; };
+		36A7677B24699FB900B65AB2 /* TrainDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7677A24699FB900B65AB2 /* TrainDataRequest.swift */; };
+		36A7677E2469BFB500B65AB2 /* StationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7677D2469BFB500B65AB2 /* StationsPresenter.swift */; };
+		36A767802469BFBF00B65AB2 /* StationsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7677F2469BFBF00B65AB2 /* StationsInteractor.swift */; };
+		36A767822469BFE600B65AB2 /* StationsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A767812469BFE600B65AB2 /* StationsModule.swift */; };
+		36A7678B2469C4A800B65AB2 /* StationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7678A2469C4A800B65AB2 /* StationViewModel.swift */; };
+		727B5BF941A208635D26FDE9 /* Pods_Comutty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E014586EFEA73B0872FDDD93 /* Pods_Comutty.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		36698EFD246752B800B04D2A /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		36698F0224675E5000B04D2A /* TimetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableViewController.swift; sourceTree = "<group>"; };
+		3690303F2465A05F00BBD29D /* Comutty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comutty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		369030422465A05F00BBD29D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		369030462465A06000BBD29D /* StationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewController.swift; sourceTree = "<group>"; };
+		369030492465A06000BBD29D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3690304B2465A06100BBD29D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3690304E2465A06100BBD29D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		369030502465A06100BBD29D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		369030572465A09D00BBD29D /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		369380932469CC8E0072DE5B /* UIViewController+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Instantiate.swift"; sourceTree = "<group>"; };
+		36A767582468112F00B65AB2 /* Station+List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Station+List.swift"; sourceTree = "<group>"; };
+		36A7675A2468116500B65AB2 /* StationTrainData+List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StationTrainData+List.swift"; sourceTree = "<group>"; };
+		36A7675C246811B700B65AB2 /* TrainStopData+List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainStopData+List.swift"; sourceTree = "<group>"; };
+		36A767602468600700B65AB2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		36A767632468673600B65AB2 /* TrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewController.swift; sourceTree = "<group>"; };
+		36A7676724694C2300B65AB2 /* TimetableModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableModule.swift; sourceTree = "<group>"; };
+		36A7676924694C8A00B65AB2 /* TimetablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetablePresenter.swift; sourceTree = "<group>"; };
+		36A7676B24694D7700B65AB2 /* TimetableInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableInteractor.swift; sourceTree = "<group>"; };
+		36A7677024695B6800B65AB2 /* TimetableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableTableViewCell.swift; sourceTree = "<group>"; };
+		36A76773246961C800B65AB2 /* TrainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewModel.swift; sourceTree = "<group>"; };
+		36A7677624699E4800B65AB2 /* StationsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsRequest.swift; sourceTree = "<group>"; };
+		36A7677824699EF700B65AB2 /* StationDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDataRequest.swift; sourceTree = "<group>"; };
+		36A7677A24699FB900B65AB2 /* TrainDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDataRequest.swift; sourceTree = "<group>"; };
+		36A7677D2469BFB500B65AB2 /* StationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsPresenter.swift; sourceTree = "<group>"; };
+		36A7677F2469BFBF00B65AB2 /* StationsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsInteractor.swift; sourceTree = "<group>"; };
+		36A767812469BFE600B65AB2 /* StationsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsModule.swift; sourceTree = "<group>"; };
+		36A7678A2469C4A800B65AB2 /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
+		7B6D31E7E8C83CAEE5D86C46 /* Pods-Comutty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comutty.debug.xcconfig"; path = "Target Support Files/Pods-Comutty/Pods-Comutty.debug.xcconfig"; sourceTree = "<group>"; };
+		7C85AED41D3359315B6F27E6 /* Pods-Comutty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comutty.release.xcconfig"; path = "Target Support Files/Pods-Comutty/Pods-Comutty.release.xcconfig"; sourceTree = "<group>"; };
+		E014586EFEA73B0872FDDD93 /* Pods_Comutty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Comutty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3690303C2465A05F00BBD29D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727B5BF941A208635D26FDE9 /* Pods_Comutty.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EF2C96801C3162B0A7A0901 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B6D31E7E8C83CAEE5D86C46 /* Pods-Comutty.debug.xcconfig */,
+				7C85AED41D3359315B6F27E6 /* Pods-Comutty.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		36698F0424675E5A00B04D2A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				36A767632468673600B65AB2 /* TrainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		36698F0524675E6D00B04D2A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3690304B2465A06100BBD29D /* Assets.xcassets */,
+				369030502465A06100BBD29D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		36698F0624675E7900B04D2A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3690304D2465A06100BBD29D /* LaunchScreen.storyboard */,
+				369030482465A06000BBD29D /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		36698F0724675E9600B04D2A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				36698EFD246752B800B04D2A /* EmptyStateView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		369030362465A05F00BBD29D = {
+			isa = PBXGroup;
+			children = (
+				369030412465A05F00BBD29D /* Comutty */,
+				369030402465A05F00BBD29D /* Products */,
+				1EF2C96801C3162B0A7A0901 /* Pods */,
+				BE901263870AC581F1A7A4BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		369030402465A05F00BBD29D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3690303F2465A05F00BBD29D /* Comutty.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		369030412465A05F00BBD29D /* Comutty */ = {
+			isa = PBXGroup;
+			children = (
+				36A767602468600700B65AB2 /* AppCoordinator.swift */,
+				369030422465A05F00BBD29D /* AppDelegate.swift */,
+				36698F0724675E9600B04D2A /* Components */,
+				369380912469CC690072DE5B /* Extensions */,
+				36A76757246810FB00B65AB2 /* Models */,
+				36A7676524694BF900B65AB2 /* Modules */,
+				36698F0524675E6D00B04D2A /* Resources */,
+				36698F0624675E7900B04D2A /* Storyboards */,
+				36698F0424675E5A00B04D2A /* ViewControllers */,
+				369030562465A08D00BBD29D /* WebService */,
+			);
+			path = Comutty;
+			sourceTree = "<group>";
+		};
+		369030562465A08D00BBD29D /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				36A7677524699E3000B65AB2 /* APIRequests */,
+				369030572465A09D00BBD29D /* WebService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		369380912469CC690072DE5B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				369380932469CC8E0072DE5B /* UIViewController+Instantiate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		36A76757246810FB00B65AB2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36A767582468112F00B65AB2 /* Station+List.swift */,
+				36A7675A2468116500B65AB2 /* StationTrainData+List.swift */,
+				36A7675C246811B700B65AB2 /* TrainStopData+List.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		36A7676524694BF900B65AB2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				36A7677C2469BF9900B65AB2 /* Stations */,
+				36A7676624694C0700B65AB2 /* Timetable */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		36A7676624694C0700B65AB2 /* Timetable */ = {
+			isa = PBXGroup;
+			children = (
+				36A7676724694C2300B65AB2 /* TimetableModule.swift */,
+				36A76772246961B700B65AB2 /* Model */,
+				36A7676F24695B3900B65AB2 /* Interactor */,
+				36A7676E24695B3100B65AB2 /* Presenter */,
+				36A7676D24695B2500B65AB2 /* View */,
+			);
+			path = Timetable;
+			sourceTree = "<group>";
+		};
+		36A7676D24695B2500B65AB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				36A7677024695B6800B65AB2 /* TimetableTableViewCell.swift */,
+				36698F0224675E5000B04D2A /* TimetableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		36A7676E24695B3100B65AB2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				36A7676924694C8A00B65AB2 /* TimetablePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		36A7676F24695B3900B65AB2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				36A7676B24694D7700B65AB2 /* TimetableInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		36A76772246961B700B65AB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36A76773246961C800B65AB2 /* TrainViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36A7677524699E3000B65AB2 /* APIRequests */ = {
+			isa = PBXGroup;
+			children = (
+				36A7677624699E4800B65AB2 /* StationsRequest.swift */,
+				36A7677824699EF700B65AB2 /* StationDataRequest.swift */,
+				36A7677A24699FB900B65AB2 /* TrainDataRequest.swift */,
+			);
+			path = APIRequests;
+			sourceTree = "<group>";
+		};
+		36A7677C2469BF9900B65AB2 /* Stations */ = {
+			isa = PBXGroup;
+			children = (
+				36A767812469BFE600B65AB2 /* StationsModule.swift */,
+				36A767862469C43800B65AB2 /* Interactor */,
+				36A767872469C45E00B65AB2 /* Models */,
+				36A767852469C43100B65AB2 /* Presenter */,
+				36A767842469C42C00B65AB2 /* View */,
+			);
+			path = Stations;
+			sourceTree = "<group>";
+		};
+		36A767842469C42C00B65AB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				369030462465A06000BBD29D /* StationsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		36A767852469C43100B65AB2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				36A7677D2469BFB500B65AB2 /* StationsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		36A767862469C43800B65AB2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				36A7677F2469BFBF00B65AB2 /* StationsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		36A767872469C45E00B65AB2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36A7678A2469C4A800B65AB2 /* StationViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE901263870AC581F1A7A4BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E014586EFEA73B0872FDDD93 /* Pods_Comutty.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3690303E2465A05F00BBD29D /* Comutty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 369030532465A06100BBD29D /* Build configuration list for PBXNativeTarget "Comutty" */;
+			buildPhases = (
+				A68A3A71A6777ABE48F8AF6E /* [CP] Check Pods Manifest.lock */,
+				3690303B2465A05F00BBD29D /* Sources */,
+				3690303C2465A05F00BBD29D /* Frameworks */,
+				3690303D2465A05F00BBD29D /* Resources */,
+				46AB8B72578EA8CD8A3B3BB7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Comutty;
+			productName = Comutty;
+			productReference = 3690303F2465A05F00BBD29D /* Comutty.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		369030372465A05F00BBD29D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Maksim Dimitrov";
+				TargetAttributes = {
+					3690303E2465A05F00BBD29D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3690303A2465A05F00BBD29D /* Build configuration list for PBXProject "Comutty" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 369030362465A05F00BBD29D;
+			productRefGroup = 369030402465A05F00BBD29D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3690303E2465A05F00BBD29D /* Comutty */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3690303D2465A05F00BBD29D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3690304F2465A06100BBD29D /* LaunchScreen.storyboard in Resources */,
+				3690304C2465A06100BBD29D /* Assets.xcassets in Resources */,
+				3690304A2465A06000BBD29D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46AB8B72578EA8CD8A3B3BB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Comutty/Pods-Comutty-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Comutty/Pods-Comutty-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Comutty/Pods-Comutty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A68A3A71A6777ABE48F8AF6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Comutty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3690303B2465A05F00BBD29D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36A767642468673600B65AB2 /* TrainViewController.swift in Sources */,
+				36A767612468600700B65AB2 /* AppCoordinator.swift in Sources */,
+				36A7677E2469BFB500B65AB2 /* StationsPresenter.swift in Sources */,
+				36A7677B24699FB900B65AB2 /* TrainDataRequest.swift in Sources */,
+				369030472465A06000BBD29D /* StationsViewController.swift in Sources */,
+				36A7676824694C2300B65AB2 /* TimetableModule.swift in Sources */,
+				36A7677924699EF700B65AB2 /* StationDataRequest.swift in Sources */,
+				36A7678B2469C4A800B65AB2 /* StationViewModel.swift in Sources */,
+				36A767592468112F00B65AB2 /* Station+List.swift in Sources */,
+				36A7677724699E4800B65AB2 /* StationsRequest.swift in Sources */,
+				36A767822469BFE600B65AB2 /* StationsModule.swift in Sources */,
+				369030432465A05F00BBD29D /* AppDelegate.swift in Sources */,
+				36698EFE246752B800B04D2A /* EmptyStateView.swift in Sources */,
+				369380942469CC8E0072DE5B /* UIViewController+Instantiate.swift in Sources */,
+				36A767802469BFBF00B65AB2 /* StationsInteractor.swift in Sources */,
+				369030582465A09D00BBD29D /* WebService.swift in Sources */,
+				36A76774246961C800B65AB2 /* TrainViewModel.swift in Sources */,
+				36A7675D246811B700B65AB2 /* TrainStopData+List.swift in Sources */,
+				36A7677124695B6800B65AB2 /* TimetableTableViewCell.swift in Sources */,
+				36A7676C24694D7700B65AB2 /* TimetableInteractor.swift in Sources */,
+				36A7676A24694C8A00B65AB2 /* TimetablePresenter.swift in Sources */,
+				36698F0324675E5000B04D2A /* TimetableViewController.swift in Sources */,
+				36A7675B2468116500B65AB2 /* StationTrainData+List.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		369030482465A06000BBD29D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				369030492465A06000BBD29D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3690304D2465A06100BBD29D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3690304E2465A06100BBD29D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		369030512465A06100BBD29D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		369030522465A06100BBD29D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		369030542465A06100BBD29D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B6D31E7E8C83CAEE5D86C46 /* Pods-Comutty.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74FCZH37QW;
+				INFOPLIST_FILE = Comutty/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.max.Comutty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		369030552465A06100BBD29D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C85AED41D3359315B6F27E6 /* Pods-Comutty.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74FCZH37QW;
+				INFOPLIST_FILE = Comutty/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.max.Comutty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3690303A2465A05F00BBD29D /* Build configuration list for PBXProject "Comutty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				369030512465A06100BBD29D /* Debug */,
+				369030522465A06100BBD29D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		369030532465A06100BBD29D /* Build configuration list for PBXNativeTarget "Comutty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				369030542465A06100BBD29D /* Debug */,
+				369030552465A06100BBD29D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 369030372465A05F00BBD29D /* Project object */;
+}
